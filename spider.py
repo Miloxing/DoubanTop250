@@ -45,7 +45,6 @@ def main(start):
     url = 'https://movie.douban.com/top250?start=' + str(start)
     html = get_one_page(url)
     for item in parse_one_page(html):
-        print(item)
         write_to_file(item)
 
 
